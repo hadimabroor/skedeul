@@ -88,7 +88,7 @@ $route['index'] = 'home/index';
 $route['error-404'] = 'home/error_404';
 
 //site routes
-$route['demo'] = 'home/demo';
+$route['demo'] = 'home/landing';
 $route['features'] = 'home/features';
 $route['faqs'] = 'home/faqs';
 $route['pricing'] = 'home/pricing';
