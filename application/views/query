@@ -1,0 +1,9 @@
+ALTER TABLE `blog_posts` ADD `lang_id` VARCHAR(155) NULL AFTER `id`;
+
+ALTER TABLE `product_services` ADD `lang_id` VARCHAR(155) NULL AFTER `id`;
+
+ALTER TABLE `pages` ADD `lang_id` VARCHAR(155) NULL AFTER `id`;
+
+ALTER TABLE `faqs` ADD `lang_id` VARCHAR(155) NULL AFTER `id`;
+
+ALTER TABLE `testimonials` ADD `lang_id` VARCHAR(155) NULL AFTER `id`;
