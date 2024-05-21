@@ -3247,7 +3247,7 @@
                 <?php endif ?>
                 <?php if (!empty($settings->instagram)) : ?>
                   <a
-                    target="_blank" href="<?= prep_url($settings->instagram) ?>
+                    href="<?= prep_url($settings->instagram) ?>
                     class="px-3 text-gray-7 hover:text-white"
                   >
                     <svg
