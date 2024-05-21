@@ -9,15 +9,15 @@
     </title>
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.png"
+      href="<?php echo base_url() ?>assets/assets/images/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/assets/css/animate.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/assets/css/tailwind.css" />
 
     <!-- ==== WOW JS ==== -->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/assets/js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
@@ -77,7 +77,7 @@
             >
               <div class="mt-16">
                 <img
-                  src="assets/images/hero/dash.jpg"
+                  src="<?php echo base_url() ?>assets/assets/images/hero/dash.jpg"
                   alt="hero"
                   class="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                 />
@@ -1483,7 +1483,7 @@
                     class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]"
                   >
                     <img
-                      src="./assets/images/about/about-image-01.jpg"
+                      src="<?php echo base_url() ?>assets/assets/images/about/about-image-01.jpg"
                       alt="about image"
                       class="h-full w-full object-cover object-center"
                     />
@@ -1495,7 +1495,7 @@
                     class="mb-4 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]"
                   >
                     <img
-                      src="./assets/images/about/about-image-02.jpg"
+                      src="<?php echo base_url() ?>assets/assets/images/about/about-image-02.jpg"
                       alt="about image"
                       class="h-full w-full object-cover object-center"
                     />
@@ -1768,23 +1768,23 @@
                 >
                   <div class="mb-[18px] flex items-center gap-[2px]">
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                   </div>
@@ -1796,7 +1796,7 @@
                   <a href="#" class="flex items-center gap-4">
                     <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
-                        src="./assets/images/testimonials/avatar.png"
+                        src="<?php echo base_url() ?>assets/assets/images/testimonials/avatar.png"
                         alt="author"
                         class="h-[50px] w-[50px] overflow-hidden rounded-full"
                       />
@@ -1819,23 +1819,23 @@
                 >
                   <div class="mb-[18px] flex items-center gap-[2px]">
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                   </div>
@@ -1847,7 +1847,7 @@
                   <a href="#" class="flex items-center gap-4">
                     <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
-                        src="./assets/images/testimonials/avatar.png"
+                        src="<?php echo base_url() ?>assets/assets/images/testimonials/avatar.png"
                         alt="author"
                         class="h-[50px] w-[50px] overflow-hidden rounded-full"
                       />
@@ -1870,23 +1870,23 @@
                 >
                   <div class="mb-[18px] flex items-center gap-[2px]">
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                   </div>
@@ -1898,7 +1898,7 @@
                   <a href="#" class="flex items-center gap-4">
                     <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
-                        src="./assets/images/testimonials/avatar.png"
+                        src="<?php echo base_url() ?>assets/assets/images/testimonials/avatar.png"
                         alt="author"
                         class="h-[50px] w-[50px] overflow-hidden rounded-full"
                       />
@@ -1921,23 +1921,23 @@
                 >
                   <div class="mb-[18px] flex items-center gap-[2px]">
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                   </div>
@@ -1949,7 +1949,7 @@
                   <a href="#" class="flex items-center gap-4">
                     <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
-                        src="./assets/images/testimonials/avatar.png"
+                        src="<?php echo base_url() ?>assets/assets/images/testimonials/avatar.png"
                         alt="author"
                         class="h-[50px] w-[50px] overflow-hidden rounded-full"
                       />
@@ -1972,23 +1972,23 @@
                 >
                   <div class="mb-[18px] flex items-center gap-[2px]">
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                     <img
-                      src="./assets/images/testimonials/icon-star.svg"
+                      src="<?php echo base_url() ?>assets/assets/images/testimonials/icon-star.svg"
                       alt="star icon"
                     />
                   </div>
@@ -2000,7 +2000,7 @@
                   <a href="#" class="flex items-center gap-4">
                     <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
                       <img
-                        src="./assets/images/testimonials/avatar.png"
+                        src="<?php echo base_url() ?>assets/assets/images/testimonials/avatar.png"
                         alt="author"
                         class="h-[50px] w-[50px] overflow-hidden rounded-full"
                       />
@@ -2964,8 +2964,8 @@
 
     <!-- ====== All Scripts -->
 
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="<?php echo base_url() ?>assets/assets/js/swiper-bundle.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/assets/js/main.js"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
