@@ -3290,14 +3290,14 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">Features</h4>
+              <h4 class="mb-9 text-lg font-semibold text-white">Services</h4>
               <ul>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="<?php echo base_url('pricing') ?>"
                     class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    How it works
+                    Pricing
                   </a>
                 </li>
                 <li>
