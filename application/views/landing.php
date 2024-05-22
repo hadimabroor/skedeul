@@ -38,7 +38,7 @@
                 <img
                   src="<?php echo base_url() ?>assets/assets/images/logo/logo.png"
                   alt="logo"
-                  class="max-w-full"
+                  class="max-w-full header-logo"
                 />
               </a>
           </div>
