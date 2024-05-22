@@ -1,7 +1,14 @@
-<?php if (is_admin()) redirect(base_url('admin/dashboard')); ?>
-<?php if (is_customer()) redirect(base_url('customer/appointments')); ?>
-<?php if (is_staff()) redirect(base_url('staff/appointments')); ?>
-<?php if (is_user()) redirect(base_url('admin/dashboard/user')); ?>
+<?php 
+  if (is_admin())
+    redirect(base_url('admin/dashboard'));
+  else if (is_customer())
+    redirect(base_url('customer/appointments'));
+  else if (is_staff())
+    redirect(base_url('staff/appointments'));
+  else if (is_user())
+   redirect(base_url('admin/dashboard/user'));
+?>
+    
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -3143,8 +3150,7 @@
                 />
               </a>
               <p class="mb-8 max-w-[270px] text-base text-gray-7">
-                We create digital experiences for brands and companies by using
-                technology.
+                Skedeul is a multi business service booking software, that gives your users the ability to create and manage bookings, staffs, services, customers, etc.
               </p>
               <div class="-mx-3 flex items-center">
                 <a
