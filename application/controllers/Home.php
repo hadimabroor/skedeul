@@ -309,6 +309,7 @@ class Home extends Home_Controller {
         $data['keywords'] = "error,404";
         $this->load->view('error_404');
     }
+    // landing page
     public function landing()
     {   
         $this->load->view('landing');

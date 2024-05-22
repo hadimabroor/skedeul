@@ -32,7 +32,7 @@
         <div class="relative -mx-4 flex items-center justify-between">
           <div class="w-60 max-w-full px-4">
             <a href="<?php echo base_url() ?>" class="navbar-logo block w-full py-5">
-              <img width="120px" src="<?php echo base_url(settings()->logo) ?>" alt="logo">
+              <img width="120px" src="assets/images/logo/logo-white.png" alt="logo">
             </a>
           </div>
           <div class="flex w-full items-center justify-between px-4">
