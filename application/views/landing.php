@@ -31,9 +31,16 @@
       <div class="container">
         <div class="relative -mx-4 flex items-center justify-between">
           <div class="w-60 max-w-full px-4">
-            <a href="<?php echo base_url() ?>" class="navbar-logo block w-full py-5">
-              <img width="120px" src="<?php echo base_url() ?>assets/assets/images/logo/logo-white.png" alt="logo">
-            </a>
+          <a
+                href="javascript:void(0)"
+                class="mb-6 inline-block max-w-[160px]"
+              >
+                <img
+                  src="<?php echo base_url() ?>assets/assets/images/logo/logo.png"
+                  alt="logo"
+                  class="max-w-full"
+                />
+              </a>
           </div>
           <div class="flex w-full items-center justify-between px-4">
             <div>
@@ -3598,7 +3605,7 @@
     <!-- ====== All Scripts -->
 
     <script src="<?php echo base_url() ?>assets/assets/js/swiper-bundle.min.js"></script>
-    <script defer src="<?php echo base_url() ?>assets/assets/js/main.js"></script>
+    <script src="<?php echo base_url() ?>assets/assets/js/main.js"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
