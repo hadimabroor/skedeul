@@ -3059,7 +3059,7 @@
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div class="mb-10 w-full">
               <a
-                href="javascript:void(0)"
+                href="<?= base_url()?>"
                 class="mb-6 inline-block max-w-[160px]"
               >
                 <img
