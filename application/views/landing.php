@@ -36,7 +36,7 @@
                 class="mb-6 inline-block max-w-[160px]"
               >
                 <img
-                  src="<?php echo base_url() ?>assets/assets/images/logo/logo.png"
+                  src="<?php echo base_url() ?>assets/assets/images/logo/logo-white.png"
                   alt="logo"
                   class="max-w-full header-logo"
                 />
