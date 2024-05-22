@@ -1,3 +1,8 @@
+<?php if (is_admin()) redirect(base_url('admin/dashboard')); ?>
+<?php if (is_customer()) redirect(base_url('customer/appointments')); ?>
+<?php if (is_staff()) redirect(base_url('staff/appointments')); ?>
+<?php if (is_user()) redirect(base_url('admin/dashboard/user')); ?>
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -175,83 +180,18 @@
                 </span>
               </label>
               <div class="hidden sm:flex">
-                <?php if (is_admin()) redirect(base_url('admin/dashboard')); ?>
-                  <a
-                    href="<?php echo base_url('auth/logout') ?>"
-                    class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
-                  >
-                    Log Out
-                  </a>
-                  <a
-                    href="<?php echo base_url('admin/dashboard') ?>"
-                    class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                  >
-                    Dashboard
-                  </a>
-                <?php if(is_customer()): ?>
-                  <a
-                    href="<?php echo base_url('auth/logout') ?>"
-                    class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
-                  >
-                    Log Out
-                  </a>
-                  <a
-                    href="<?php echo base_url('customer/appointments') ?>"
-                    class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                  >
-                    Dashboard
-                  </a>
-                <?php elseif(is_staff()): ?>
-                  <a
-                    href="<?php echo base_url('auth/logout') ?>"
-                    class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
-                  >
-                    Log Out
-                  </a>
-                  <a
-                    href="<?php echo base_url('staff/appointments') ?>"
-                    class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                  >
-                    Dashboard
-                  </a>
-                <?php elseif(is_user()): ?>
-                  <a
-                    href="<?php echo base_url('auth/logout') ?>"
-                    class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
-                  >
-                    Log Out
-                  </a>
-                  <?php $diff = date_difference(user()->created_at); ?>
-                  <?php if (user()->email_verified == 0 && settings()->enable_email_verify == 1 && $diff < 2): ?>
-                    <a
-                      href="<?php echo base_url('auth/verify?type=mail') ?>"
-                      class="signUpBtn rounded-md bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                      style="background-color:#eed202;"
-                    >
-                      Dashboard
-                    </a>
-                  <?php else: ?>
-                    <a
-                      href="<?php echo base_url('admin/dashboard/user') ?>"
-                      class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                    >
-                      Dashboard
-                    </a>
-                  <?php endif ?>
-                <?php else: ?>
-                  <a
-                    href="<?php echo base_url('login') ?>"
-                    class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
-                  >
-                    Sign In
-                  </a>
-                  <a
-                    href="<?php echo base_url('register') ?>"
-                    class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
-                  >
-                    Get Started
-                  </a>
-                <?php endif ?>
+                <a
+                  href="<?php echo base_url('login') ?>"
+                  class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
+                >
+                  Sign In
+                </a>
+                <a
+                  href="<?php echo base_url('register') ?>"
+                  class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+                >
+                  Get Started
+                </a>
               </div>
             </div>
           </div>
