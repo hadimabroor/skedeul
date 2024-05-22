@@ -3246,28 +3246,32 @@
                     Pricing
                   </a>
                 </li>
+                <?php if (settings()->enable_blog == 1): ?>
+                  <li>
+                    <a
+                      href="<?php echo base_url('blogs') ?>"
+                      class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    >
+                      Blogs
+                    </a>
+                  </li>
+                <?php endif ?>
+                <?php if (settings()->enable_faq == 1): ?>
+                  <li>
+                    <a
+                      href="<?php echo base_url('faqs') ?>"
+                      class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    >
+                      Terms of Service
+                    </a>
+                  </li>
+                <?php endif ?>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="<?php echo base_url('contact') ?>"
                     class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Privacy policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Refund policy
+                    Contact
                   </a>
                 </li>
               </ul>
@@ -3279,7 +3283,19 @@
           </div>
           <div class="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">Latest blog</h4>
+              <h4 class="mb-9 text-lg font-semibold text-white">Pages</h4>
+              <ul>
+              <?php foreach (get_pages(0) as $page): ?>
+                <li>
+                  <a
+                    href="<?php echo base_url('page/'.$page->slug) ?>"
+                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                  >
+                    <?php echo html_escape($page->title) ?>
+                  </a>
+                </li>
+              <?php endforeach ?>
+              </ul>
             </div>
           </div>
         </div>
