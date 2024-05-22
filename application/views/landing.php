@@ -3262,7 +3262,7 @@
                       href="<?php echo base_url('faqs') ?>"
                       class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                     >
-                      Terms of Service
+                      FAQs
                     </a>
                   </li>
                 <?php endif ?>
@@ -3311,24 +3311,14 @@
                 <div
                   class="-mx-3 flex items-center justify-center md:justify-start"
                 >
+                <?php foreach (get_pages(0) as $page): ?>
                   <a
-                    href="javascript:void(0)"
+                    href="<?php echo base_url('page/'.$page->slug) ?>"
                     class="px-3 text-base text-gray-7 hover:text-white hover:underline"
                   >
-                    Privacy policy
+                  <?php echo html_escape($page->title) ?>
                   </a>
-                  <a
-                    href="javascript:void(0)"
-                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Legal notice
-                  </a>
-                  <a
-                    href="javascript:void(0)"
-                    class="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Terms of service
-                  </a>
+                <?php endforeach ?>
                 </div>
               </div>
             </div>
