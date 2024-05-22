@@ -3598,7 +3598,7 @@
     <!-- ====== All Scripts -->
 
     <script src="<?php echo base_url() ?>assets/assets/js/swiper-bundle.min.js"></script>
-    <script src="<?php echo base_url() ?>assets/assets/js/main.js"></script>
+    <script defer src="<?php echo base_url() ?>assets/assets/js/main.js"></script>
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");

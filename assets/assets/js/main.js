@@ -13,6 +13,19 @@
       ud_header.classList.remove("sticky");
     }
 
+    window.addEventListener("DOMContentLoaded", function() {
+      if(logo.length) {
+        // === logo change
+        if (ud_header.classList.contains("sticky")) {
+          document.querySelector(".header-logo").src =
+            "<?php echo base_url() ?>assets/assets/images/logo/logo.png"
+        } else {
+          document.querySelector(".header-logo").src =
+            "<?php echo base_url() ?>assets/assets/images/logo/logo-white.png"
+        }
+      }
+    }, false);
+
     if(logo.length) {
       // === logo change
       if (ud_header.classList.contains("sticky")) {
