@@ -27,7 +27,7 @@ class Home extends Home_Controller {
         $data['posts'] = $this->common_model->get_home_blog_posts();
         $data['brands'] = $this->common_model->get_site_brands();
         $data['main_content'] = $this->load->view('home', $data, TRUE);
-        $this->load->view('panel_redirect');
+        $this->load->view('include/panel_redirect');
         $this->load->view('landing', $data);
     }
    
