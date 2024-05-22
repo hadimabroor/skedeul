@@ -74,17 +74,16 @@
                   </li>
                   <li class="group relative">
                     <a
-                      target="_blank"
-                      href="https://www.google.coms"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="<?php echo base_url('pricing') ?>"
+                      class="mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Pricing
                     </a>
                   </li>
                   <li class="group relative">
                     <a
-                      href="/contact"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="<?php echo base_url('contact') ?>"
+                      class="mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Contact
                     </a>
@@ -92,8 +91,8 @@
                   <?php if (settings()->enable_blog == 1): ?>
                   <li class="group relative">
                     <a
-                      href="/blogs"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      href="<?php echo base_url('blogs') ?>"
+                      class="mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Blog
                     </a>
@@ -176,7 +175,7 @@
                 </span>
               </label>
               <div class="hidden sm:flex">
-                <?php if (is_admin()): ?>
+                <?php if (is_admin()) redirect(base_url('admin/dashboard')); ?>
                   <a
                     href="<?php echo base_url('auth/logout') ?>"
                     class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
@@ -189,7 +188,7 @@
                   >
                     Dashboard
                   </a>
-                <?php elseif(is_customer()): ?>
+                <?php if(is_customer()): ?>
                   <a
                     href="<?php echo base_url('auth/logout') ?>"
                     class="loginBtn px-[22px] py-2 text-base font-medium text-white hover:opacity-70"
