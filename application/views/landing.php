@@ -3063,7 +3063,7 @@
                 class="mb-6 inline-block max-w-[160px]"
               >
                 <img
-                  src="<?= base_url()?>/assets/assets/images/logo/logo-white.svg"
+                  src="<?= base_url()?>/assets/assets/images/logo/logo-white.png"
                   alt="logo"
                   class="max-w-full"
                 />
