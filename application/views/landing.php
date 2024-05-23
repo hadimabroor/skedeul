@@ -106,6 +106,14 @@
                     </a>
                   </li>
                   <?php endif ?>
+                  <li class="group relative lg:hidden">
+                    <a
+                      href="<?php echo base_url('contact') ?>"
+                      class="mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                    >
+                      Contact
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -2919,7 +2927,7 @@
                 >
                   CONTACT US
                 </span>
-                <h2
+                <h2Pricing
                   class="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white"
                 >
                   Let's talk about your problem.
