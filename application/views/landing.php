@@ -22,6 +22,15 @@
       new WOW().init();
     </script>
     <script src="https://kit.fontawesome.com/b15747e6b1.js" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2TV81XKMP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P2TV81XKMP');
+    </script>
   </head>
 
   <body>
